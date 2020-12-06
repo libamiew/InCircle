@@ -1,5 +1,5 @@
-# Personal Portfolio - mini project
+# InCircle Homepage Design Prototype
 
-- [x] html
-- [x] scss
-- [x] javascript
+- [] html
+- [] scss
+- [] javascript
