@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&Nanum+Gothic+Coding:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
 @import "_variables.scss";
 @import "_elements.scss";
 
@@ -29,11 +30,11 @@ p {
 }
 
 body {
-  color: $color-white;
-  font-family: "Open Sans", sans-serif;
+  color: rgb(0, 0, 0);
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   margin: 0px;
   cursor: default;
-  background-color: rgb(5, 5, 5);
+  background-color: rgb(255, 255, 255);
 }
 
 a {
@@ -58,18 +59,35 @@ nav {
   z-index: 1;
   position: fixed;
   width: 99vw;
-  height: 40px;
+  height: 100px;
   left: 0px;
   top: 0px;
-  background: rgb(5, 5, 5);
+  background: rgb(255, 255, 255);
   transition: $animation-duration linear;
 
+  img{
+    float: left;
+  }
 
   .logo {
-    color: $color-white;
+    color: rgb(0, 0, 0);
     font-size: 24px;
-    margin-left: 5px;
+    margin-left: 2em;
+    margin-top: 1em;
     transition: $animation-duration linear;
+  }
+
+  .menu{
+    margin-left: 10em;
+    width: 99vw;
+   
+    .item{
+      display: inline-block;
+      margin-top: 0.5em;
+    }
+    .item:nth-child(n+1){
+      margin-left: 2em;
+    }
   }
 }
 
@@ -84,9 +102,14 @@ nav {
 //Home
 #home {
   width: 99vw;
-  height: 0;
-  padding-bottom: 80vh;
+  height: 100vh;
+  padding-bottom: 90vh;
 
+  img{
+    margin-top: 100px;
+    margin-left: 0.0vw;
+    width: 99vw;
+  }
 
   .home__title {
     --interval: 2s;
@@ -135,7 +158,7 @@ nav {
   .home__subtitle {
 
     position: absolute;
-    top: 75vh;
+    top: 100vh;
     font-weight: $weight-bold;
     transition: $animation-duration linear;
 
@@ -224,7 +247,7 @@ nav {
 
 @keyframes flicker {
   50% {
-    color: white;
+    color: rgb(0, 0, 0);
     filter: saturate(100%) hue-rotate(20deg);
   }
 }
@@ -236,10 +259,16 @@ nav {
   padding-bottom: 200vh;
 
   .works__title {
+    margin-top: 30vh;
     margin-left: 8vw;
     padding-bottom: 50px;
   }
 
+  .introduce{
+    margin-left: 8vw;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+  }
   .works__container {
     transition: $animation-duration linear;
 
@@ -436,7 +465,6 @@ nav {
 
     .skills__background {
       display: flex;
-      background: #c4c4c4;
 
       @include breakpoint(xs) {
         flex-direction: column;
@@ -493,11 +521,10 @@ nav {
   position: fixed;
   bottom: 50px;
   right: 50px;
-  width: 70px;
-  height: 70px;
-  font-size: 50px;
-  background-color: $color-white;
-  color: $color-yellow;
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  color: rgb(0, 0, 0);
   border-radius: 50%;
   border: 1px solid;
   opacity: 0;

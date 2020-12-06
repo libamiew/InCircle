@@ -3,10 +3,11 @@
 // Make navbar transparent when it is on the top
 const nav = document.querySelector("nav");
 const navHeight = nav.getBoundingClientRect().height;
-document.addEventListener("scroll", () => {
-  if (window.scrollY > navHeight) nav.classList.add("nav--hide");
-  else nav.classList.remove("nav--hide");
-});
+// document.addEventListener("scroll", () =>
+// {
+//   if (window.scrollY > navHeight) nav.classList.add("nav--hide");
+//   else nav.classList.remove("nav--hide");
+// });
 
 // random subtitle
 const subtitle = document.querySelector(".home__subtitle");
