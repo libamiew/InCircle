@@ -1,5 +1,5 @@
 # InCircle Homepage Design Prototype
 
-- [] html
-- [] scss
-- [] javascript
+- [x] html
+- [x] scss
+- [x] javascript
